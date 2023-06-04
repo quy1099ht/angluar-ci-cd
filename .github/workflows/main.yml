@@ -12,7 +12,7 @@ jobs:
     - name: Setting up Nodes
       uses: actions/setup-node@v3
     - name: Install dependencies
-      run: npm install
+      run: CI=true npm install
     - name: Run tests
-      run: npm test -- --watch=false --browsers=ChromeHeadless
+      run: CI=true npm test -- --watch=false --browsers=ChromeHeadless
       continue-on-error: true
