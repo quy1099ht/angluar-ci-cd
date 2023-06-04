@@ -14,5 +14,5 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Run tests
-      run: ng test --watch=false --code-coverage=true --single-run=true --browser=ChromeHeadless
+      run: npm test
       continue-on-error: true
