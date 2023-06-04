@@ -14,5 +14,5 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Run tests
-      run: npm test
+      run: npm test -- --watch=false --browsers=ChromeHeadless
       continue-on-error: true
