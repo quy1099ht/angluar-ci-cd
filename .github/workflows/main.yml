@@ -15,3 +15,4 @@ jobs:
       run: npm install
     - name: Run tests
       run: CI=true npm test
+      continue-on-error: false
